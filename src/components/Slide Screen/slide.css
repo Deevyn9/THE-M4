@@ -1,0 +1,89 @@
+.slide__container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide__container .slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: slide 0.7s forwards ease-in-out;
+}
+
+.slide__container .slides.purple {
+  background-color: #5e48db;
+  width: 0%;
+  --width: 100%;
+  right: 0;
+  animation-delay: 0;
+}
+
+.slide__container .slides.blue {
+  background-color: #2dc3f5;
+  width: 0%;
+  --width: 66.666%;
+  right: 0;
+  z-index: 2;
+  animation-delay: 0.7s;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.slide__container .slides.yellow {
+  background-color: #f8ac12;
+  width: 0%;
+  --width: 33.333%;
+  right: 0;
+  z-index: 3;
+  animation-delay: 1.4s;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+@keyframes slide {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--width);
+  }
+}
+
+.slide__container h1 .texts {
+  position: relative;
+  z-index: 500;
+  color: white;
+  font-size: 70px;
+  opacity: 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  animation: rise 0.7s ease-in-out forwards;
+}
+
+/* .slide__container h1 .texts.meet {
+  animation-delay: s;
+} */
+.slide__container h1 .texts.talk {
+  animation-delay: 0.7s;
+}
+.slide__container h1 .texts.know {
+  animation-delay: 1.4s;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+    scale: 1;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+  }
+}
