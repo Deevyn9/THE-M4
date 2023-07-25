@@ -3,18 +3,12 @@ import "./slide.css";
 
 const Slide = () => {
   useEffect(() => {
-    // Start slide-out and text animation
+    // Start animations after a delay (e.g., 3000ms = 3 seconds)
     setTimeout(() => {
-      document.querySelectorAll("slides").forEach((slide, index) => {
-        slide.style.animation = `slideOut 0.7s forwards ease-in-out ${
-          index * 0.7
-        }s`;
-      });
-
-      document.querySelectorAll(".texts").forEach((text, index) => {
-        text.style.animation = `riseAndFade 0.7s ease-in-out forwards ${
-          index * 0.7
-        }s`;
+      document.querySelector(".slide__container").style.animation =
+        "slideOutContainer 1s forwards";
+      document.querySelectorAll(".texts").forEach((text) => {
+        text.style.animation = "fadeAndSlideUp 1s forwards";
       });
     }, 4000); // Adjust the delay as needed (3000ms = 3 seconds)
   }, []);

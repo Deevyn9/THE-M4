@@ -86,12 +86,14 @@
   }
 }
 
-@keyframes slideOut {
+@keyframes slideOutContainer {
   from {
-    width: var(--width);
+    transform: translateX(0);
+    width: 100%;
   }
   to {
-    width: 0;
+    transform: translateX(-100%);
+    width: 0%;
   }
 }
 
