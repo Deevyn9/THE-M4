@@ -3,14 +3,14 @@ import "./slide.css";
 
 const Slide = () => {
   useEffect(() => {
-    // Start animations after a delay (e.g., 3000ms = 3 seconds)
+    // Start animations after a delay (e.g., 4000ms = 4 seconds)
     setTimeout(() => {
       document.querySelector(".slide__container").style.animation =
         "slideOutContainer 1s forwards";
       document.querySelectorAll(".texts").forEach((text) => {
         text.style.animation = "fadeAndSlideUp 1s forwards";
       });
-    }, 4000); // Adjust the delay as needed (3000ms = 3 seconds)
+    }, 4000); // Adjust the delay as needed (4000ms = 4 seconds)
   }, []);
 
   return (

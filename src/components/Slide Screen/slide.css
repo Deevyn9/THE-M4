@@ -1,4 +1,9 @@
 .slide__container {
+  --bmw-black: #000000;
+  --bmw-white: #ffffff;
+  --bmw-blue: #0166B1;
+  --bmw-grey: #6f6f6f;
+
   position: relative;
   display: grid;
   place-items: center;
@@ -15,7 +20,8 @@
 }
 
 .slide__container .slides.purple {
-  background-color: #5e48db;
+  background-color: var(--bmw-white);
+  /* background-color: var(--bmw-blue); */
   width: 0%;
   --width: 100%;
   right: 0;
@@ -23,25 +29,23 @@
 }
 
 .slide__container .slides.blue {
-  background-color: #2dc3f5;
+  background-color: var(--bmw-grey);
+  /* background-color: var(--bmw-white); */
   width: 0%;
   --width: 66.666%;
   right: 0;
   z-index: 2;
   animation-delay: 0.7s;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
 }
 
 .slide__container .slides.yellow {
-  background-color: #f8ac12;
+  /* background-color: var(--bmw-grey); */
+  background-color: var(--bmw-blue);
   width: 0%;
   --width: 33.333%;
   right: 0;
   z-index: 3;
   animation-delay: 1.4s;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
 }
 
 @keyframes slide {
@@ -56,7 +60,7 @@
 .slide__container h1 .texts {
   position: relative;
   z-index: 500;
-  color: white;
+  color: black;
   font-size: 70px;
   opacity: 0;
   text-align: center;
