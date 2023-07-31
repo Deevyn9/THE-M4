@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import "./slide.css";
 
 const Slide = () => {
+  document.body.style.overflow = 'hidden';
+
   useEffect(() => {
     // Start animations after a delay (e.g., 4000ms = 4 seconds)
     setTimeout(() => {
@@ -10,6 +12,7 @@ const Slide = () => {
       document.querySelectorAll(".texts").forEach((text) => {
         text.style.animation = "fadeAndSlideUp 1s forwards";
       });
+      document.body.style.overflow = 'scroll';
     }, 4000); // Adjust the delay as needed (4000ms = 4 seconds)
   }, []);
 

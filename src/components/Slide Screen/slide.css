@@ -4,7 +4,7 @@
   --bmw-blue: #0166B1;
   --bmw-grey: #6f6f6f;
 
-  position: relative;
+  position: fixed;
   display: grid;
   place-items: center;
   height: 100vh;
