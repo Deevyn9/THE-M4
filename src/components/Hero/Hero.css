@@ -1,0 +1,14 @@
+.hero {
+    height: 100vh;
+    border: 4px dashed red;
+    opacity: 0;
+    animation: showHero .3s ease-in-out 4.2s 1 forwards;
+}
+
+@keyframes showHero {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

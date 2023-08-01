@@ -6,4 +6,25 @@
 
 body {
   background-color: black;
+  color: white;
+}
+
+.bmw__logo {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 500;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: show .4s ease-in-out 4.5s 1 forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
