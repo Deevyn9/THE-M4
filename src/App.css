@@ -9,6 +9,10 @@ body {
   color: white;
 }
 
+.App {
+  position: relative;
+}
+
 .bmw__logo {
   position: fixed;
   right: 30px;
@@ -27,4 +31,24 @@ body {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.div__scroll {
+  height: 100vh;
+}
+
+.div__scroll.transparent {
+  background-color: transparent;
+}
+
+.div__scroll.red {
+  background-color: red;
+}
+
+.div__scroll.yellow {
+  background-color: yellow;
+}
+
+.div__scroll.blue {
+  background-color: blue;
 }
