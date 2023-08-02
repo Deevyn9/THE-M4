@@ -1,0 +1,12 @@
+.transparent {
+    padding: 20px;
+}
+
+.main__header {
+    position: fixed;
+    width: 90vw;
+}
+
+.main__header img {
+    width: 100%;
+}
