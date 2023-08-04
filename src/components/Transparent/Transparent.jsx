@@ -12,19 +12,6 @@ const Transparent = () => {
       const initialWidth = 80;
       const reducedWidth = 10;
 
-      // if (scrollPosition <= window.innerHeight) {
-      //   const newWidth =
-      //     initialWidth -
-      //     (scrollPosition / window.innerHeight) * (initialWidth - reducedWidth);
-      //   setImageWidth(newWidth);
-      // } else {
-      //   const newWidth =
-      //     reducedWidth +
-      //     ((scrollPosition - window.innerHeight) / window.innerHeight) *
-      //       (initialWidth - reducedWidth);
-      //   setImageWidth(newWidth);
-      // }
-
       if (scrollPosition <= window.innerHeight) {
         // Calculate the new width while scrolling down within the first 100vh
         const newWidth =
