@@ -4,8 +4,22 @@
 
 .main__header {
     position: fixed;
+    overflow: hidden;
+    height: fit-content;
 }
 
 .main__header img {
     width: 100%;
+    animation: slideUP 1s ease-in-out 4s forwards;
+    opacity: 0;
+}
+
+@keyframes slideUP {
+    from {
+        margin-top: 200px;
+        opacity: 0;
+    } to {
+        margin-top: 0%;
+        opacity: 1;
+    }
 }
