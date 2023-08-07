@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Transparent.css";
-import TestImage from "../../assets/test.svg";
+// import TestImage from "../../assets/test.svg";
 
 const Transparent = () => {
   const [imageWidth, setImageWidth] = useState(80);
@@ -9,8 +9,8 @@ const Transparent = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const initialWidth = 80;
-      const reducedWidth = 10;
+      const initialWidth = 7;
+      const reducedWidth = 1;
 
       if (scrollPosition <= window.innerHeight) {
         // Calculate the new width while scrolling down within the first 100vh
@@ -45,8 +45,8 @@ const Transparent = () => {
 
   return (
     <div className="div__scroll transparent">
-      <div className="main__header" style={{ width: `${imageWidth}vw` }}>
-        <img src={TestImage} alt="test" />
+      <div className="main__header" style={{ fontSize: `${imageWidth}vw` }}>
+        <h1>THE BMW M4</h1>
       </div>
     </div>
   );
