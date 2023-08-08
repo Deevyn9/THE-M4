@@ -3,7 +3,7 @@ import "./Transparent.css";
 // import TestImage from "../../assets/test.svg";
 
 const Transparent = () => {
-  const [imageWidth, setImageWidth] = useState(80);
+  const [imageWidth, setImageWidth] = useState(7);
   const [scrollDirection, setScrollDirection] = useState("down");
 
   useEffect(() => {
@@ -46,7 +46,9 @@ const Transparent = () => {
   return (
     <div className="div__scroll transparent">
       <div className="main__header" style={{ fontSize: `${imageWidth}vw` }}>
-        <h1>THE BMW M4</h1>
+        <div className="parent">
+          <h1>THE BMW M4</h1>
+        </div>
       </div>
     </div>
   );
