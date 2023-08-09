@@ -26,6 +26,10 @@ body {
   animation: show .4s ease-in-out 4.5s 1 forwards;
 }
 
+.bmw__logo img {
+  width: 50px;
+}
+
 @keyframes show {
   from {
     opacity: 0;

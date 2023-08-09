@@ -6,6 +6,9 @@
     opacity: 0;
     animation: showHero .3s ease-in-out 4.2s 1 forwards;
     z-index: -1;
+    background: url(https://images.unsplash.com/photo-1638850142752-0e7da84c65e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2028&q=80) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @keyframes showHero {

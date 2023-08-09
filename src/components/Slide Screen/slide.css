@@ -1,8 +1,8 @@
 .slide__container {
   --bmw-black: #000000;
   --bmw-white: #ffffff;
-  --bmw-blue: #0166B1;
-  --bmw-grey: #6f6f6f;
+  --bmw-blue: #448AFF;
+  --bmw-grey: #CFD8DC;
 
   position: fixed;
   display: grid;
