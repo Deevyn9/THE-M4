@@ -35,22 +35,6 @@
     height: fit-content;
 }
 
-/* .main__header h1 {
-    font-size: 5vw;
-    animation: slideUP 1s ease-in-out 4s forwards;
-    opacity: 0;
-}
-
-@keyframes slideUP {
-    from {
-        margin-top: 200px;
-        opacity: 0;
-    } to {
-        margin-top: 0%;
-        opacity: 1;
-    }
-} */
-
 @media (min-width: 330px) {
     .parent {
         height: 60px;

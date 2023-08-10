@@ -45,7 +45,7 @@ body {
 }
 
 .div__scroll.transparent {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.347);
 }
 
 .div__scroll.red {
