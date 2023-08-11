@@ -5,16 +5,16 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="middle-texts">
+        <h4>2020</h4>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-          laboriosam iusto molestias rerum, quia recusandae perspiciatis maiores
-          nam dignissimos placeat?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quos
+          sunt illo?
         </p>
         <button>See More</button>
       </div>
 
       <div className="bottom-texts">
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>expect the unexpected</p>
       </div>
     </div>
   );
